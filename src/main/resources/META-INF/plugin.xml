@@ -1,0 +1,30 @@
+<idea-plugin>
+    <id>com.itao.linux-helper</id>
+    <name>Linux-Helper</name>
+    <vendor email="320885976@qq.com" url="http://www.yourcompany1.com">itao</vendor>
+
+    <description><![CDATA[
+    这是一个查询linux命令的插件<br>
+    通过快捷键 Ctrl + Alt + S 或 Tools -> linux helper 查询
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="LinuxHelper" anchor="right"
+                    factoryClass="com.itao.linux.window.LinuxHelperFactory"
+                    order="last"
+                    doNotActivateOnStart="true"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="LinuxCommandSearch" class="com.itao.linux.action.LinuxCommandSearchAction" text="Linux Command Search"
+                description="Linux command search">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt H"/>
+        </action>
+    </actions>
+</idea-plugin>

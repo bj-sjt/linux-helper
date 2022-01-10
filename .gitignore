@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Eclipse template
+.metadata
+.idea/
+test/
+/build/
+/gradle/
+/.gradle/

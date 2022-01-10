@@ -1,0 +1,42 @@
+plugins {
+    id 'org.jetbrains.intellij' version '0.7.3'
+    id 'java'
+}
+
+group 'com.itao'
+version '1.0.0'
+
+sourceCompatibility = JavaVersion.VERSION_11
+targetCompatibility = JavaVersion.VERSION_11
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    implementation 'io.vertx:vertx-web-client:4.2.3'
+    implementation 'cn.hutool:hutool-http:5.7.19'
+    implementation 'org.jsoup:jsoup:1.14.3'
+}
+
+buildPlugin {
+    buildSearchableOptions.enabled = false
+}
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version = "2021.2.2"
+    type = "IU"
+}
+patchPluginXml {
+    /*changeNotes = """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""*/
+    sinceBuild = "201"
+    untilBuild = null
+}
+test {
+    useJUnitPlatform()
+}
