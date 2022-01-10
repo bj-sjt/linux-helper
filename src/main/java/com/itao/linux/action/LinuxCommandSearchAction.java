@@ -5,6 +5,9 @@ import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.itao.linux.window.dialog.SearchDialog;
 
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
 public class LinuxCommandSearchAction extends AnAction {
 
     private SearchDialog dialog;

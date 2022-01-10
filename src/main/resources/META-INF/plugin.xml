@@ -15,8 +15,7 @@
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow id="LinuxHelper" anchor="right"
                     factoryClass="com.itao.linux.window.LinuxHelperFactory"
-                    order="last"
-                    doNotActivateOnStart="true"/>
+                    order="last" icon="/icon/linux.svg"/>
     </extensions>
 
     <actions>
