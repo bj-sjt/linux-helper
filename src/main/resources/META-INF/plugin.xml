@@ -4,8 +4,13 @@
     <vendor email="320885976@qq.com" url="http://www.yourcompany1.com">itao</vendor>
 
     <description><![CDATA[
-    这是一个查询linux命令的插件<br>
-    通过快捷键 Ctrl + Alt + S 或 Tools -> linux helper 查询
+    <a href="https://github.com/bj-sjt/linux-helper">Github</a>
+    <ul>
+    <li> linux command search plugin </li>
+    <li> Support `Tools-> linux helper` search Mapping (Ctrl + Alt + /) </li>
+    <li> 这是一个查询linux命令的插件<br> </li>
+    <li> 通过快捷键 Ctrl + Alt + S 或 Tools -> linux helper 查询 </li>
+    </ul>
     ]]></description>
 
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
