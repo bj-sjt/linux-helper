@@ -7,7 +7,7 @@
     <a href="https://github.com/bj-sjt/linux-helper">Github</a>
     <ul>
     <li> linux command search plugin </li>
-    <li> Support `Tools-> linux helper` search Mapping (Ctrl + Alt + /) </li>
+    <li> Support `Tools-> linux helper` search Mapping (Ctrl + Alt + S) </li>
     <li> 这是一个查询linux命令的插件<br> </li>
     <li> 通过快捷键 Ctrl + Alt + S 或 Tools -> linux helper 查询 </li>
     </ul>

@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.itao'
-version '1.0.2'
+version '1.0.3'
 
 sourceCompatibility = JavaVersion.VERSION_11
 targetCompatibility = JavaVersion.VERSION_11
@@ -30,10 +30,15 @@ intellij {
     type = "IU"
 }
 patchPluginXml {
-    /*changeNotes = """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""*/
-    sinceBuild = "201"
+    changeNotes = """<pre>
+Release v1.0.3
+  1. reset completely
+Release v1.0.2
+  1. bug fix
+Release v1.0.1
+  1. compatibility fix
+</pre>"""
+    sinceBuild = "145.258"
     untilBuild = null
 }
 test {
